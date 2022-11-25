@@ -1,0 +1,32 @@
+
+text-e {
+  display: block;
+  min-height: 300px;
+  width: 100%;
+
+  padding: 25px;
+  border-radius: .25rem;
+  box-sizing: border-box;
+
+  font-family: 'Courier New', Courier, monospace;
+  
+  background-color: #ccc;
+}
+
+.text-e__line {
+  display: flex;
+  word-break: break-all;
+  outline: none;
+}
+
+.text-e__line__component {
+  display: inline-block;
+  outline: none;
+
+  min-height: 18px;
+  min-width: 1px;
+}
+
+.text-e__line[align='left']   { justify-content: flex-start; }
+.text-e__line[align='right']  { justify-content: flex-end; }
+.text-e__line[align='center'] { justify-content: center; }
